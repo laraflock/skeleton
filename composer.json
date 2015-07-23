@@ -1,0 +1,43 @@
+{
+  "name": ":vendor_name/:package_name",
+  "description": ":package_description",
+  "keywords": [
+    "laravel",
+    "laraflock",
+    ":package_name"
+  ],
+  "homepage": ":website",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": ":author_name",
+      "email": ":author_email",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/support": "~5.1"
+  },
+  "require-dev": {
+    "laravel/laravel": "~5.1",
+    "mockery/mockery": "~0.9",
+    "phpunit/phpunit": "~4.0",
+    "phpspec/phpspec": "~2.1",
+    "scrutinizer/ocular": "~1.1",
+    "fzaninotto/faker": "^1.5"
+  },
+  "autoload": {
+    "classmap": [
+      "tests"
+    ],
+    "psr-4": {
+      ":vendor_namespace\\:package_namespace\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      ":vendor_namespace\\:package_namespace\\Test\\": "tests/"
+    }
+  }
+}
